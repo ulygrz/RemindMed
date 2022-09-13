@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">RemindMed</string>
+    <string name="title_home">Home</string>
+    <string name="title_tasks">Tasks</string>
+    <string name="title_path">Path</string>
+    <string name="title_locations">Locations</string>
+    <string name="title_add_task">Add new Task</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="notiz">Notiz :</string>
+    <string name="add_new_location">Add new location</string>
+    <string name="ok">Ok</string>
+    <string name="create_path">Neue Standort zum Pfad hinzufügen</string>
+    <string name="weitere_informationen">Weitere Informationen:</string>
+
+
+</resources>

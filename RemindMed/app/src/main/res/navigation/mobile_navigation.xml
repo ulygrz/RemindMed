@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.remindmed.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/locationsFragment"
+        android:name="com.example.remindmed.ui.Locations.LocationsFragment"
+        android:label="@string/title_locations"
+        tools:layout="@layout/fragment_locations" >
+        <action
+            android:id="@+id/action_locationsFragment_to_pathFragment"
+            app:destination="@+id/pathFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/pathFragment"
+        android:name="com.example.remindmed.ui.Path.PathFragment"
+        android:label="@string/title_path"
+        tools:layout="@layout/fragment_path" />
+
+    <fragment
+        android:id="@+id/addTaskFragment"
+        android:name="com.example.remindmed.ui.AddNewTask.AddNewTaskFragment"
+        android:label="@string/title_add_task"
+        tools:layout="@layout/fragment_addnewtask" >
+        <action
+            android:id="@+id/action_addTaskFragment_to_tasksListFragment"
+            app:destination="@+id/tasksListFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/tasksListFragment"
+        android:name="com.example.remindmed.ui.Tasks.TasksFragment"
+        android:label="@string/title_tasks"
+        tools:layout="@layout/fragment_tasks" />
+</navigation>
